@@ -1,4 +1,6 @@
 const fs = require("fs");
+var coreModule = require('nameOfModule');
+
 const path = require("path");
 const homeHandler = (request, response) => {
 	const filePath = path.join(__dirname, "../public/index.html");
@@ -41,3 +43,4 @@ const publicHandler = (request, response, endpoint) => {
 	});
 };
 module.exports = { homeHandler, publicHandler };
+module.exports = handler;
